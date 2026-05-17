@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧘 Yoga Sequencing App
 
-## Getting Started
+A modular yoga sequencing platform built with **Next.js**, **MongoDB**, and **Tailwind CSS**, designed to help yoga teachers and practitioners build intelligent, structured yoga classes.
 
-First, run the development server:
+---
+
+## 🌿 Overview
+
+This project aims to create a **structured yoga sequencing system** using reusable components such as:
+
+- Poses (atomic units)
+- Modules (flow sequences)
+- Templates (full class structures)
+
+The long-term vision includes **rule-based sequencing and AI-assisted class generation**.
+
+---
+
+## 🚀 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Lucide Icons](https://lucide.dev/)
+
+---
+
+## 🧠 Core Concept
+
+Instead of manually building yoga classes from scratch each time, this system uses:
+
+### 1. Poses
+Atomic yoga postures stored with metadata.
+
+### 2. Modules
+Reusable flow segments such as:
+- Sun Salutation A
+- Hip Opening Flow
+- Standing Warrior Series
+
+### 3. Templates
+Full class structures composed of modules.
+
+---
+
+## 🏗️ Architecture (Future Vision)
+
+The system is designed to evolve through three phases:
+
+### Phase 1 — Templates (MVP)
+- Fixed yoga class templates
+- Manual sequencing
+- Basic UI builder
+
+### Phase 2 — Rule-Based Engine
+- Dynamic module selection
+- Pose relationships
+- Safety + sequencing logic
+
+### Phase 3 — AI-Assisted Sequencing
+- AI-generated variations
+- Intelligent transitions
+- Teaching cues and flow optimisation
+
+---
+
+# 🚀 Getting Started
+
+
+## 1. Clone the repository
+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/yoga-sequencing-app.git
+cd matflow
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 2. Install dependencies
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 3. Add environment variables
+```bash
+Create a .env.local file:
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+STRIPE_SECRET_KEY=your_stripe_secret
+NEXT_PUBLIC_URL=http://localhost:3000
+MONGODB_URI=your_mongo_connection
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 4. Run the development server
+```bash
+npm run dev
+```
