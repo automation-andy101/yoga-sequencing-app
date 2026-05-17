@@ -65,6 +65,73 @@ The system is designed to evolve through three phases:
 
 ---
 
+## 🏗️ Project Structure
+
+```text
+app/
+  (public)/
+    mat-hire/
+    success/
+    (auth)/
+  (admin)/
+    dashboard/
+  api/
+    checkout/
+    stripe-webhook/
+
+lib/
+  db.ts
+  auth.ts
+  utils.ts
+  models/
+    MatHire.ts
+```
+
+## 🎯 MVP Goals
+
+- Build pose database structure
+- Create reusable sequence modules
+- Implement class templates
+- Build a simple sequence builder UI
+- Enable saving and loading sequences
+
+---
+
+## 🌱 Future Enhancements
+
+- AI-powered sequencing assistant
+- Drag-and-drop flow builder
+- Pose illustration library (200–300 poses)
+- Export to PDF / class cards
+- Teacher personalization modes
+- Voice-guided classes
+
+---
+
+## 🧘 Philosophy
+
+This project is built around the idea that yoga sequencing is:
+
+> A structured system of movement, breath, and intention — not just a list of poses.
+
+---
+
+## 📌 Status
+
+🚧 Early-stage development (MVP phase)
+
+---
+
+## 🤝 Contributing
+
+This is currently a solo project, but contributions may open in the future.
+
+---
+
+## 📜 License
+
+MIT
+
 # 🚀 Getting Started
 
 
