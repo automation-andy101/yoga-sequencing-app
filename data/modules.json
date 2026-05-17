@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "module_sun_salutation_a",
+    "name": "Sun Salutation A",
+    "type": "warmup",
+    "style": [
+      "vinyasa",
+      "ashtanga"
+    ],
+    "difficulty": "beginner",
+    "focus": [
+      "full-body",
+      "warmup",
+      "shoulders",
+      "hamstrings"
+    ],
+    "energy": "heating",
+    "durationMinutes": 5,
+    "poses": [
+      {
+        "poseId": "pose_mountain",
+        "holdSeconds": 10
+      },
+      {
+        "poseId": "pose_forward_fold",
+        "holdSeconds": 10
+      },
+      {
+        "poseId": "pose_half_lift",
+        "holdSeconds": 10
+      },
+      {
+        "poseId": "pose_chaturanga",
+        "holdSeconds": 5
+      },
+      {
+        "poseId": "pose_upward_dog",
+        "holdSeconds": 10
+      },
+      {
+        "poseId": "pose_downward_dog",
+        "holdSeconds": 30
+      }
+    ]
+  },
+  {
+    "_id": "module_warrior_flow",
+    "name": "Warrior Flow",
+    "type": "standing-flow",
+    "style": ["vinyasa"],
+    "difficulty": "beginner",
+    "focus": ["legs", "balance", "strength", "hips"],
+    "energy": "heating",
+    "estimatedBreaths": 30,
+    "poses": [
+      {
+        "poseId": "pose_warrior_1",
+        "duration": { "type": "breaths", "value": 5 }
+      },
+      {
+        "poseId": "pose_warrior_2",
+        "duration": { "type": "breaths", "value": 5 }
+      }
+    ]
+  }
+]

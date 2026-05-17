@@ -1,0 +1,102 @@
+[
+    {
+        "_id": "template_beginner_vinyasa_45",
+        "name": "Beginner Vinyasa 45",
+        "style": "vinyasa",
+        "difficulty": "beginner",
+        "durationMinutes": 45,
+        "sections": [
+            {
+                "type": "arrival",
+                "moduleIds": [
+                    "module_breath_awareness"
+                ]
+            },
+            {
+                "type": "warmup",
+                "moduleIds": [
+                    "module_cat_cow",
+                    "module_spinal_mobility",
+                    "module_gentle_twists"
+                ]
+            },
+            {
+                "type": "vinyasa",
+                "moduleIds": [
+                    "module_sun_salutation_a"
+                ]
+            },
+            {
+                "type": "standing-flow",
+                "moduleIds": [
+                    "module_warrior_flow"
+                ]
+            },
+            {
+                "type": "peak-prep",
+                "moduleIds": [
+                    "module_hip_opening_flow"
+                ]
+            },
+            {
+                "type": "cooldown",
+                "moduleIds": [
+                    "module_supine_twist",
+                    "module_childs_pose_rest"
+                ]
+            },
+            {
+                "type": "final-relaxation",
+                "moduleIds": [
+                    "module_savasana"
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "template_slow_flow_30",
+        "name": "Slow Flow 30",
+        "style": "vinyasa",
+        "difficulty": "beginner",
+        "durationMinutes": 30,
+        "sections": [
+            {
+                "type": "arrival",
+                "moduleIds": [
+                    "module_breath_awareness"
+                ]
+            },
+            {
+                "type": "warmup",
+                "moduleIds": [
+                    "module_cat_cow",
+                    "module_spinal_mobility"
+                ]
+            },
+            {
+                "type": "vinyasa",
+                "moduleIds": [
+                    "module_sun_salutation_a"
+                ]
+            },
+            {
+                "type": "standing-flow",
+                "moduleIds": [
+                    "module_warrior_flow"
+                ]
+            },
+            {
+                "type": "cooldown",
+                "moduleIds": [
+                    "dule_childs_pose_rest"
+                ]
+            },
+            {
+                "type": "final-relaxation",
+                "moduleIds": [
+                    "module_savasana"
+                ]
+            }
+        ]
+    }
+]

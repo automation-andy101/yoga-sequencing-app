@@ -1,0 +1,325 @@
+[
+  {
+    "_id": "pose_downward_dog",
+    "englishName": "Downward Facing Dog",
+    "shortName": "Down Dog",
+    "sanskritName": "Adho Mukha Svanasana",
+    "difficulty": "beginner",
+    "categories": ["inversion", "arm-support", "stretch"],
+    "bodyFocus": ["wrists", "hamstrings", "calves", "shoulders", "core"],
+    "movementPattern": ["forward-fold", "shoulder-flexion"],
+    "energeticEffect": "heating",
+    "contraindications": ["wrist injury", "high blood pressure"],
+    "prepPoses": ["pose_plank", "pose_puppy_pose"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": ["pose_forward_fold", "pose_plank", "pose_three_legged_dog"],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_mountain",
+    "englishName": "Mountain Pose",
+    "shortName": "Mountain",
+    "sanskritName": "Tadasana",
+    "difficulty": "beginner",
+    "categories": ["standing"],
+    "bodyFocus": ["feet", "legs", "core", "spine"],
+    "movementPattern": ["upright-standing"],
+    "energeticEffect": "grounding",
+    "contraindications": [],
+    "prepPoses": [],
+    "counterPoses": [],
+    "transitionsTo": ["pose_forward_fold", "pose_chair_pose"],
+    "duration": {
+      "type": "breaths",
+      "value": 3
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_childs_pose",
+    "englishName": "Child's Pose",
+    "shortName": "Child's",
+    "sanskritName": "Balasana",
+    "difficulty": "beginner",
+    "categories": ["restorative", "forward-fold"],
+    "bodyFocus": ["hips", "spine", "shoulders"],
+    "movementPattern": ["spinal-flexion"],
+    "energeticEffect": "cooling",
+    "contraindications": ["knee injury"],
+    "prepPoses": [],
+    "counterPoses": ["pose_cobra"],
+    "transitionsTo": ["pose_tabletop", "pose_downward_dog"],
+    "duration": {
+      "type": "breaths",
+      "value": 10
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_cat_cow",
+    "englishName": "Cat Cow",
+    "shortName": "Cat/Cow",
+    "sanskritName": "Marjaryasana Bitilasana",
+    "difficulty": "beginner",
+    "categories": ["warmup"],
+    "bodyFocus": ["spine", "core", "shoulders"],
+    "movementPattern": ["spinal-flexion", "spinal-extension"],
+    "energeticEffect": "warming",
+    "contraindications": ["wrist injury"],
+    "prepPoses": ["pose_tabletop"],
+    "counterPoses": [],
+    "transitionsTo": ["pose_downward_dog"],
+    "duration": {
+      "type": "breaths",
+      "value": 6
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "flowing",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_plank",
+    "englishName": "Plank Pose",
+    "shortName": "Plank",
+    "sanskritName": "Phalakasana",
+    "difficulty": "beginner",
+    "categories": ["arm-support", "strength"],
+    "bodyFocus": ["core", "wrists", "shoulders"],
+    "movementPattern": ["core-stability"],
+    "energeticEffect": "heating",
+    "contraindications": ["wrist injury"],
+    "prepPoses": ["pose_tabletop"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": ["pose_chaturanga", "pose_downward_dog"],
+    "duration": {
+      "type": "breaths",
+      "value": 4
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_forward_fold",
+    "englishName": "Standing Forward Fold",
+    "shortName": "Forward Fold",
+    "sanskritName": "Uttanasana",
+    "difficulty": "beginner",
+    "categories": ["forward-fold", "standing"],
+    "bodyFocus": ["hamstrings", "spine", "calves"],
+    "movementPattern": ["hip-flexion"],
+    "energeticEffect": "cooling",
+    "contraindications": ["lower back injury"],
+    "prepPoses": ["pose_mountain"],
+    "counterPoses": ["pose_half_lift"],
+    "transitionsTo": ["pose_half_lift", "pose_mountain"],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_half_lift",
+    "englishName": "Halfway Lift",
+    "shortName": "Half Lift",
+    "sanskritName": "Ardha Uttanasana",
+    "difficulty": "beginner",
+    "categories": ["standing"],
+    "bodyFocus": ["spine", "hamstrings", "core"],
+    "movementPattern": ["spinal-extension"],
+    "energeticEffect": "warming",
+    "contraindications": ["lower back injury"],
+    "prepPoses": ["pose_forward_fold"],
+    "counterPoses": ["pose_forward_fold"],
+    "transitionsTo": ["pose_chaturanga", "pose_forward_fold"],
+    "duration": {
+      "type": "breaths",
+      "value": 2
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_chaturanga",
+    "englishName": "Four Limbed Staff Pose",
+    "shortName": "Chaturanga",
+    "sanskritName": "Chaturanga Dandasana",
+    "difficulty": "intermediate",
+    "categories": ["arm-support", "strength"],
+    "bodyFocus": ["triceps", "core", "wrists", "shoulders"],
+    "movementPattern": ["arm-balance"],
+    "energeticEffect": "heating",
+    "contraindications": ["shoulder injury", "wrist injury"],
+    "prepPoses": ["pose_plank"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": ["pose_upward_dog", "pose_cobra"],
+    "duration": {
+      "type": "breaths",
+      "value": 1
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_upward_dog",
+    "englishName": "Upward Facing Dog",
+    "shortName": "Up Dog",
+    "sanskritName": "Urdhva Mukha Svanasana",
+    "difficulty": "beginner",
+    "categories": ["backbend"],
+    "bodyFocus": ["spine", "chest", "shoulders", "wrists"],
+    "movementPattern": ["spinal-extension"],
+    "energeticEffect": "heating",
+    "contraindications": ["lower back injury"],
+    "prepPoses": ["pose_cobra"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": ["pose_downward_dog"],
+    "duration": {
+      "type": "breaths",
+      "value": 3
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "expansive",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_cobra",
+    "englishName": "Cobra Pose",
+    "shortName": "Cobra",
+    "sanskritName": "Bhujangasana",
+    "difficulty": "beginner",
+    "categories": ["backbend"],
+    "bodyFocus": ["spine", "chest", "core"],
+    "movementPattern": ["spinal-extension"],
+    "energeticEffect": "warming",
+    "contraindications": ["pregnancy", "lower back injury"],
+    "prepPoses": ["pose_sphinx"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": ["pose_childs_pose", "pose_downward_dog"],
+    "duration": {
+      "type": "breaths",
+      "value": 3
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "expansive",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_warrior_1",
+    "englishName": "Warrior I",
+    "shortName": "Warrior I",
+    "sanskritName": "Virabhadrasana I",
+    "difficulty": "beginner",
+    "categories": ["standing", "lunge"],
+    "bodyFocus": ["legs", "hips", "shoulders"],
+    "movementPattern": ["hip-extension"],
+    "energeticEffect": "heating",
+    "contraindications": ["hip injury"],
+    "prepPoses": ["pose_low_lunge"],
+    "counterPoses": ["pose_forward_fold"],
+    "transitionsTo": ["pose_warrior_2"],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": true,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_warrior_2",
+    "englishName": "Warrior II",
+    "shortName": "Warrior II",
+    "sanskritName": "Virabhadrasana II",
+    "difficulty": "beginner",
+    "categories": ["standing"],
+    "bodyFocus": ["legs", "hips", "core"],
+    "movementPattern": ["hip-opening"],
+    "energeticEffect": "heating",
+    "contraindications": ["knee injury"],
+    "prepPoses": ["pose_warrior_1"],
+    "counterPoses": ["pose_forward_fold"],
+    "transitionsTo": ["pose_triangle", "pose_side_angle"],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": true,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  }
+]
