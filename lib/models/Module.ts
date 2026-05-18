@@ -60,7 +60,7 @@ const ModuleSchema = new mongoose.Schema(
 
     energy: {
       type: String,
-      enum: ["heating", "cooling", "grounding", "neutral"],
+      enum: ["warming", "heating", "cooling", "grounding", "neutral"],
       required: true,
     },
 

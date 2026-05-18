@@ -10,6 +10,7 @@ export type YogaStyle =
   | "restorative";
 
 export type Energy =
+  | "warming"
   | "heating"
   | "cooling"
   | "grounding"
