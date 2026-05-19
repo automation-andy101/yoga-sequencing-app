@@ -40,8 +40,9 @@
             {
                 "type": "cooldown",
                 "moduleIds": [
-                    "module_supine_twist",
-                    "module_childs_pose_rest"
+                    "module_seated_forward_folds",
+                    "module_gentle_twists",
+                    "module_restorative_backbends"
                 ]
             },
             {

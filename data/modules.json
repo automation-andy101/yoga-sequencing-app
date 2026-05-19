@@ -161,6 +161,106 @@
     ]
   },
   {
+    "_id": "module_supine_twists",
+    "name": "Supine Twists",
+    "type": "cooldown",
+    "style": ["vinyasa", "yin", "restorative"],
+    "difficulty": "beginner",
+    "focus": ["spine", "twists", "release", "cooldown"],
+    "energy": "cooling",
+    "estimatedBreaths": 10,
+    "poses": [
+      {
+        "poseId": "pose_supine_twist",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_supine_twist",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "right"
+      }
+    ]
+  },
+  {
+    "_id": "module_hip_opening_flow",
+    "name": "Hip Opening Flow",
+    "type": "mobility",
+    "style": ["vinyasa", "yin", "restorative"],
+    "difficulty": "beginner",
+    "focus": [
+      "hips",
+      "glutes",
+      "hamstrings",
+      "mobility"
+    ],
+    "energy": "grounding",
+    "estimatedBreaths": 20,
+    "poses": [
+      {
+        "poseId": "pose_low_lunge",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_low_lunge",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "right"
+      },
+      {
+        "poseId": "pose_pigeon_pose",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_pigeon_pose",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "right"
+      }
+    ]
+  },
+  {
+    "_id": "module_savasana",
+    "name": "Savasana",
+    "type": "restorative",
+    "style": ["vinyasa", "yin", "ashtanga", "restorative"],
+    "difficulty": "beginner",
+    "focus": [
+      "relaxation",
+      "integration",
+      "nervous-system"
+    ],
+    "energy": "grounding",
+    "estimatedBreaths": 50,
+    "poses": [
+      {
+        "poseId": "pose_savasana",
+        "duration": {
+          "type": "breaths",
+          "value": 50
+        }
+      }
+    ]
+  },
+  {
     "_id": "module_restorative_backbends",
     "name": "Gentle Backbends",
     "type": "cooldown",

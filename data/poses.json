@@ -296,7 +296,7 @@
     "peakPose": false
   },
 
-  
+
 
   {
     "_id": "pose_supine_twist",
@@ -537,6 +537,64 @@
       "thumbnailUrl": ""
     },
     "breathPattern": "steady",
+    "peakPose": false
+  },
+  {
+    "_id": "pose_low_lunge",
+    "englishName": "Low Lunge",
+    "shortName": "Low Lunge",
+    "sanskritName": "Anjaneyasana",
+    "difficulty": "beginner",
+    "categories": ["lunge", "hip-opening"],
+    "bodyFocus": ["hips", "quads", "hamstrings", "core"],
+    "movementPattern": ["hip-extension"],
+    "energy": "warming",
+    "contraindications": ["knee injury"],
+    "prepPoses": ["pose_downward_dog"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": [
+      "pose_warrior_1",
+      "pose_pigeon_pose"
+    ],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": true,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+  {
+    "_id": "pose_pigeon_pose",
+    "englishName": "Pigeon Pose",
+    "shortName": "Pigeon",
+    "sanskritName": "Eka Pada Rajakapotasana",
+    "difficulty": "intermediate",
+    "categories": ["hip-opening", "forward-fold"],
+    "bodyFocus": ["hips", "glutes", "lower-back"],
+    "movementPattern": ["external-hip-rotation"],
+    "energy": "grounding",
+    "contraindications": ["knee injury", "hip injury"],
+    "prepPoses": ["pose_low_lunge"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": [
+      "pose_seated_forward_fold",
+      "pose_supine_twist"
+    ],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": true,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
     "peakPose": false
   }
 ]
