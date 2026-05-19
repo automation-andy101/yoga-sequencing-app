@@ -108,6 +108,223 @@
   },
 
   {
+    "_id": "pose_seated_side_twist",
+    "englishName": "Seated Side Twist",
+    "shortName": "Seated Twist",
+    "sanskritName": "Ardha Matsyendrasana",
+    "difficulty": "beginner",
+    "categories": ["twist", "seated"],
+    "bodyFocus": ["spine", "obliques", "hips"],
+    "movementPattern": ["spinal-rotation"],
+    "energy": "warming",
+    "contraindications": ["pregnancy", "lower back injury"],
+    "prepPoses": ["pose_childs_pose"],
+    "counterPoses": ["pose_forward_fold"],
+    "transitionsTo": ["pose_forward_fold", "pose_supine_twist"],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": true,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_bridge_pose",
+    "englishName": "Bridge Pose",
+    "shortName": "Bridge",
+    "sanskritName": "Setu Bandhasana",
+    "difficulty": "beginner",
+    "categories": ["backbend", "supine"],
+    "bodyFocus": ["spine", "glutes", "hamstrings", "chest"],
+    "movementPattern": ["spinal-extension", "hip-extension"],
+    "energy": "warming",
+    "contraindications": ["neck injury", "lower back injury"],
+    "prepPoses": ["pose_cobra"],
+    "counterPoses": ["pose_supine_twist"],
+    "transitionsTo": ["pose_supine_twist", "pose_savasana"],
+    "duration": {
+      "type": "breaths",
+      "value": 6
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "expansive",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_locust",
+    "englishName": "Locust Pose",
+    "shortName": "Locust",
+    "sanskritName": "Salabhasana",
+    "difficulty": "beginner",
+    "categories": ["backbend", "strength"],
+    "bodyFocus": ["spine", "glutes", "hamstrings", "back-body"],
+    "movementPattern": ["spinal-extension"],
+    "energy": "heating",
+    "contraindications": ["pregnancy", "lower back injury"],
+    "prepPoses": ["pose_cobra"],
+    "counterPoses": ["pose_childs_pose"],
+    "transitionsTo": ["pose_childs_pose", "pose_bridge_pose"],
+    "duration": {
+      "type": "breaths",
+      "value": 4
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "steady",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_janu_sirsasana",
+    "englishName": "Head to Knee Forward Fold",
+    "shortName": "Janu Sirsasana",
+    "sanskritName": "Janu Sirsasana",
+    "difficulty": "beginner",
+    "categories": ["forward-fold", "seated"],
+    "bodyFocus": ["hamstrings", "lower-back", "spine"],
+    "movementPattern": ["hip-flexion"],
+    "energy": "cooling",
+    "contraindications": ["hamstring injury", "lower back injury"],
+    "prepPoses": ["pose_seated_forward_fold"],
+    "counterPoses": ["pose_gentle_backbend"],
+    "transitionsTo": ["pose_seated_forward_fold"],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": true,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_seated_forward_fold",
+    "englishName": "Seated Forward Fold",
+    "shortName": "Forward Fold",
+    "sanskritName": "Paschimottanasana",
+    "difficulty": "beginner",
+    "categories": ["forward-fold", "seated"],
+    "bodyFocus": ["hamstrings", "spine", "calves"],
+    "movementPattern": ["hip-flexion"],
+    "energy": "cooling",
+    "contraindications": ["hamstring injury", "lower back injury"],
+    "prepPoses": ["pose_janu_sirsasana"],
+    "counterPoses": ["pose_bridge_pose"],
+    "transitionsTo": ["pose_supine_twist", "pose_savasana"],
+    "duration": {
+      "type": "breaths",
+      "value": 10
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_box_breath",
+    "englishName": "Box Breath",
+    "shortName": "Box Breath",
+    "sanskritName": "",
+    "difficulty": "beginner",
+    "categories": ["breathwork"],
+    "bodyFocus": ["nervous-system", "breath"],
+    "movementPattern": ["breath-awareness"],
+    "energy": "grounding",
+    "contraindications": ["breath retention sensitivity"],
+    "prepPoses": [],
+    "counterPoses": [],
+    "transitionsTo": ["pose_nadi_shodhana"],
+    "duration": {
+      "type": "breaths",
+      "value": 8
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+
+  {
+    "_id": "pose_nadi_shodhana",
+    "englishName": "Alternate Nostril Breathing",
+    "shortName": "Nadi Shodhana",
+    "sanskritName": "Nadi Shodhana",
+    "difficulty": "beginner",
+    "categories": ["breathwork"],
+    "bodyFocus": ["nervous-system", "breath"],
+    "movementPattern": ["breath-awareness"],
+    "energy": "grounding",
+    "contraindications": ["blocked nasal passages"],
+    "prepPoses": ["pose_box_breath"],
+    "counterPoses": [],
+    "transitionsTo": ["pose_cat_cow"],
+    "duration": {
+      "type": "breaths",
+      "value": 10
+    },
+    "bilateral": false,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+
+  
+
+  {
+    "_id": "pose_supine_twist",
+    "englishName": "Supine Twist",
+    "shortName": "Supine Twist",
+    "sanskritName": "Supta Matsyendrasana",
+    "difficulty": "beginner",
+    "categories": ["twist", "restorative"],
+    "bodyFocus": ["spine", "lower-back", "hips"],
+    "movementPattern": ["spinal-rotation"],
+    "energy": "cooling",
+    "contraindications": ["spinal injury"],
+    "prepPoses": ["pose_childs_pose"],
+    "counterPoses": ["pose_savasana"],
+    "transitionsTo": ["pose_savasana"],
+    "duration": {
+      "type": "breaths",
+      "value": 5
+    },
+    "bilateral": true,
+    "image": {
+      "url": "",
+      "thumbnailUrl": ""
+    },
+    "breathPattern": "deep",
+    "peakPose": false
+  },
+  {
     "_id": "pose_plank",
     "englishName": "Plank Pose",
     "shortName": "Plank",

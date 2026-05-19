@@ -36,6 +36,169 @@
     ]
   },
   {
+    "_id": "module_spinal_warmup",
+    "name": "Spinal Warmup",
+    "type": "warmup",
+    "style": ["vinyasa", "yin", "restorative"],
+    "difficulty": "beginner",
+    "focus": ["spine", "mobility", "breath"],
+    "energy": "warming",
+    "estimatedBreaths": 6,
+    "poses": [
+      {
+        "poseId": "pose_cat_cow",
+        "duration": {
+          "type": "breaths",
+          "value": 6
+        }
+      }
+    ]
+  },
+  {
+    "_id": "module_seated_forward_folds",
+    "name": "Seated Forward Folds",
+    "type": "cooldown",
+    "style": ["vinyasa", "yin", "restorative"],
+    "difficulty": "beginner",
+    "focus": ["hamstrings", "spine", "grounding", "cooldown"],
+    "energy": "cooling",
+    "estimatedBreaths": 20,
+    "poses": [
+      {
+        "poseId": "pose_janu_sirsasana",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_janu_sirsasana",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "right"
+      },
+      {
+        "poseId": "pose_seated_forward_fold",
+        "duration": {
+          "type": "breaths",
+          "value": 10
+        }
+      }
+    ]
+  },
+  {
+    "_id": "module_gentle_twists",
+    "name": "Gentle Twists",
+    "type": "mobility",
+    "style": ["vinyasa", "yin", "restorative"],
+    "difficulty": "beginner",
+    "focus": ["spine", "twists", "mobility", "breath"],
+    "energy": "warming",
+    "estimatedBreaths": 20,
+    "poses": [
+      {
+        "poseId": "pose_seated_side_twist",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_seated_side_twist",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "right"
+      },
+      {
+        "poseId": "pose_supine_twist",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_supine_twist",
+        "duration": {
+          "type": "breaths",
+          "value": 5
+        },
+        "side": "right"
+      }
+    ]
+  },
+
+  {
+    "_id": "module_breath_awareness",
+    "name": "Breath Awareness",
+    "type": "warmup",
+    "style": ["vinyasa", "yin", "ashtanga", "restorative"],
+    "difficulty": "beginner",
+    "focus": ["breath", "grounding", "nervous-system", "arrival"],
+    "energy": "grounding",
+    "estimatedBreaths": 18,
+    "poses": [
+      {
+        "poseId": "pose_box_breath",
+        "duration": {
+          "type": "breaths",
+          "value": 8
+        }
+      },
+      {
+        "poseId": "pose_nadi_shodhana",
+        "duration": {
+          "type": "breaths",
+          "value": 10
+        }
+      }
+    ]
+  },
+  {
+    "_id": "module_restorative_backbends",
+    "name": "Gentle Backbends",
+    "type": "cooldown",
+    "style": ["vinyasa", "yin", "restorative"],
+    "difficulty": "beginner",
+    "focus": [
+      "spine",
+      "chest",
+      "heart-opening",
+      "cooldown"
+    ],
+    "energy": "grounding",
+    "estimatedBreaths": 18,
+    "poses": [
+      {
+        "poseId": "pose_cobra",
+        "duration": {
+          "type": "breaths",
+          "value": 4
+        }
+      },
+      {
+        "poseId": "pose_bridge_pose",
+        "duration": {
+          "type": "breaths",
+          "value": 6
+        }
+      },
+      {
+        "poseId": "pose_locust",
+        "duration": {
+          "type": "breaths",
+          "value": 4
+        }
+      }
+    ]
+  },
+  {
     "_id": "module_warrior_flow",
     "name": "Warrior Flow",
     "type": "flow",

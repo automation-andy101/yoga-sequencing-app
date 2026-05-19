@@ -15,8 +15,7 @@
             {
                 "type": "warmup",
                 "moduleIds": [
-                    "module_cat_cow",
-                    "module_spinal_mobility",
+                    "module_spinal_warmup",
                     "module_gentle_twists"
                 ]
             },
@@ -69,8 +68,8 @@
             {
                 "type": "warmup",
                 "moduleIds": [
-                    "module_cat_cow",
-                    "module_spinal_mobility"
+                    "module_spinal_warmup",
+                    "module_gentle_twists"
                 ]
             },
             {
@@ -88,7 +87,9 @@
             {
                 "type": "cooldown",
                 "moduleIds": [
-                    "module_childs_pose_rest"
+                    "module_seated_forward_folds",
+                    "module_gentle_twists",
+                    "module_restorative_backbends"
                 ]
             },
             {

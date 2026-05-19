@@ -59,4 +59,4 @@ export default function ModuleCard({ module, poses }: ModuleCardProps) {
             </div>
         </article>
     );
-    }
+}
