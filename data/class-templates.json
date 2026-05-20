@@ -9,7 +9,7 @@
             {
                 "type": "arrival",
                 "moduleIds": [
-                    "module_breath_awareness"
+                    "module_box_breath"
                 ]
             },
             {
@@ -61,9 +61,9 @@
         "durationMinutes": 30,
         "sections": [
             {
-                "type": "arrival",
-                "moduleIds": [
-                    "module_breath_awareness"
+            "type": "arrival",
+            "moduleIds": [
+                    "module_nadi_shodhana"
                 ]
             },
             {

@@ -135,14 +135,14 @@
   },
 
   {
-    "_id": "module_breath_awareness",
-    "name": "Breath Awareness",
+    "_id": "module_box_breath",
+    "name": "Box Breath",
     "type": "warmup",
-    "style": ["vinyasa", "yin", "ashtanga", "restorative"],
+    "style": ["vinyasa", "restorative"],
     "difficulty": "beginner",
-    "focus": ["breath", "grounding", "nervous-system", "arrival"],
+    "focus": ["breath", "grounding", "nervous-system"],
     "energy": "grounding",
-    "estimatedBreaths": 18,
+    "estimatedBreaths": 8,
     "poses": [
       {
         "poseId": "pose_box_breath",
@@ -150,7 +150,19 @@
           "type": "breaths",
           "value": 8
         }
-      },
+      }
+    ]
+  },
+  {
+    "_id": "module_nadi_shodhana",
+    "name": "Nadi Shodhana",
+    "type": "warmup",
+    "style": ["yin", "restorative", "vinyasa"],
+    "difficulty": "beginner",
+    "focus": ["breath", "balance", "nervous-system"],
+    "energy": "grounding",
+    "estimatedBreaths": 10,
+    "poses": [
       {
         "poseId": "pose_nadi_shodhana",
         "duration": {
@@ -160,6 +172,10 @@
       }
     ]
   },
+
+  
+
+
   {
     "_id": "module_supine_twists",
     "name": "Supine Twists",
