@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const ClassTemplateSectionSchema = new mongoose.Schema(
+const SavedClassSectionSchema = new mongoose.Schema(
   {
     type: {
       type: String,
@@ -15,19 +15,16 @@ const ClassTemplateSectionSchema = new mongoose.Schema(
       ],
       required: true,
     },
-
     moduleIds: [{ type: String, required: true }],
-
     durationTargetMinutes: Number,
   },
   { _id: false }
 );
 
-const ClassTemplateSchema = new mongoose.Schema(
+const SavedClassSchema = new mongoose.Schema(
   {
-    _id: { type: String, required: true },
-
     name: { type: String, required: true },
+    sourceTemplateId: { type: String },
 
     style: {
       type: String,
@@ -43,12 +40,11 @@ const ClassTemplateSchema = new mongoose.Schema(
 
     durationMinutes: { type: Number, required: true },
 
-    sections: [ClassTemplateSectionSchema],
+    sections: [SavedClassSectionSchema],
   },
   { timestamps: true }
 );
 
-export default mongoose.models.ClassTemplate ||
-  mongoose.model("ClassTemplate", ClassTemplateSchema);
-
+export default mongoose.models.SavedClass ||
+  mongoose.model("SavedClass", SavedClassSchema);
   

@@ -36,6 +36,92 @@
     ]
   },
   {
+    "_id": "module_sun_salutation_b",
+    "name": "Sun Salutation B",
+    "type": "sun-salutation",
+    "style": ["vinyasa", "ashtanga"],
+    "difficulty": "intermediate",
+    "focus": ["full-body", "strength", "heat", "legs", "shoulders"],
+    "energy": "heating",
+    "estimatedBreaths": 22,
+    "poses": [
+      {
+        "poseId": "pose_mountain",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_chair_pose",
+        "duration": { "type": "breaths", "value": 2 }
+      },
+      {
+        "poseId": "pose_forward_fold",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_half_lift",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_chaturanga",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_upward_dog",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_downward_dog",
+        "duration": { "type": "breaths", "value": 3 }
+      },
+      {
+        "poseId": "pose_warrior_1",
+        "duration": { "type": "breaths", "value": 3 },
+        "side": "right"
+      },
+      {
+        "poseId": "pose_chaturanga",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_upward_dog",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_downward_dog",
+        "duration": { "type": "breaths", "value": 3 }
+      },
+      {
+        "poseId": "pose_warrior_1",
+        "duration": { "type": "breaths", "value": 3 },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_chaturanga",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_upward_dog",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_downward_dog",
+        "duration": { "type": "breaths", "value": 3 }
+      },
+      {
+        "poseId": "pose_forward_fold",
+        "duration": { "type": "breaths", "value": 1 }
+      },
+      {
+        "poseId": "pose_chair_pose",
+        "duration": { "type": "breaths", "value": 2 }
+      },
+      {
+        "poseId": "pose_mountain",
+        "duration": { "type": "breaths", "value": 1 }
+      }
+    ]
+  },
+  {
     "_id": "module_spinal_warmup",
     "name": "Spinal Warmup",
     "type": "warmup",
@@ -47,10 +133,7 @@
     "poses": [
       {
         "poseId": "pose_cat_cow",
-        "duration": {
-          "type": "breaths",
-          "value": 6
-        }
+        "duration": { "type": "breaths", "value": 6 }
       }
     ]
   },
@@ -66,26 +149,17 @@
     "poses": [
       {
         "poseId": "pose_janu_sirsasana",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
-        "side": "left"
-      },
-      {
-        "poseId": "pose_janu_sirsasana",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
+        "duration": { "type": "breaths", "value": 5 },
         "side": "right"
       },
       {
+        "poseId": "pose_janu_sirsasana",
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "left"
+      },
+      {
         "poseId": "pose_seated_forward_fold",
-        "duration": {
-          "type": "breaths",
-          "value": 10
-        }
+        "duration": { "type": "breaths", "value": 10 }
       }
     ]
   },
@@ -101,39 +175,26 @@
     "poses": [
       {
         "poseId": "pose_seated_side_twist",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
-        "side": "left"
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "right"
       },
       {
         "poseId": "pose_seated_side_twist",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
-        "side": "right"
-      },
-      {
-        "poseId": "pose_supine_twist",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
+        "duration": { "type": "breaths", "value": 5 },
         "side": "left"
       },
       {
         "poseId": "pose_supine_twist",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
+        "duration": { "type": "breaths", "value": 5 },
         "side": "right"
+      },
+      {
+        "poseId": "pose_supine_twist",
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "left"
       }
     ]
   },
-
   {
     "_id": "module_box_breath",
     "name": "Box Breath",
@@ -146,10 +207,7 @@
     "poses": [
       {
         "poseId": "pose_box_breath",
-        "duration": {
-          "type": "breaths",
-          "value": 8
-        }
+        "duration": { "type": "breaths", "value": 8 }
       }
     ]
   },
@@ -165,17 +223,10 @@
     "poses": [
       {
         "poseId": "pose_nadi_shodhana",
-        "duration": {
-          "type": "breaths",
-          "value": 10
-        }
+        "duration": { "type": "breaths", "value": 10 }
       }
     ]
   },
-
-  
-
-
   {
     "_id": "module_supine_twists",
     "name": "Supine Twists",
@@ -188,19 +239,13 @@
     "poses": [
       {
         "poseId": "pose_supine_twist",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
-        "side": "left"
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "right"
       },
       {
         "poseId": "pose_supine_twist",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
-        "side": "right"
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "left"
       }
     ]
   },
@@ -210,46 +255,29 @@
     "type": "mobility",
     "style": ["vinyasa", "yin", "restorative"],
     "difficulty": "beginner",
-    "focus": [
-      "hips",
-      "glutes",
-      "hamstrings",
-      "mobility"
-    ],
+    "focus": ["hips", "glutes", "hamstrings", "mobility"],
     "energy": "grounding",
     "estimatedBreaths": 20,
     "poses": [
       {
         "poseId": "pose_low_lunge",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
-        "side": "left"
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "right"
       },
       {
         "poseId": "pose_low_lunge",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
-        "side": "right"
-      },
-      {
-        "poseId": "pose_pigeon_pose",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
+        "duration": { "type": "breaths", "value": 5 },
         "side": "left"
       },
       {
         "poseId": "pose_pigeon_pose",
-        "duration": {
-          "type": "breaths",
-          "value": 5
-        },
+        "duration": { "type": "breaths", "value": 5 },
         "side": "right"
+      },
+      {
+        "poseId": "pose_pigeon_pose",
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "left"
       }
     ]
   },
@@ -259,20 +287,13 @@
     "type": "restorative",
     "style": ["vinyasa", "yin", "ashtanga", "restorative"],
     "difficulty": "beginner",
-    "focus": [
-      "relaxation",
-      "integration",
-      "nervous-system"
-    ],
+    "focus": ["relaxation", "integration", "nervous-system"],
     "energy": "grounding",
     "estimatedBreaths": 50,
     "poses": [
       {
         "poseId": "pose_savasana",
-        "duration": {
-          "type": "breaths",
-          "value": 50
-        }
+        "duration": { "type": "breaths", "value": 50 }
       }
     ]
   },
@@ -282,35 +303,21 @@
     "type": "cooldown",
     "style": ["vinyasa", "yin", "restorative"],
     "difficulty": "beginner",
-    "focus": [
-      "spine",
-      "chest",
-      "heart-opening",
-      "cooldown"
-    ],
+    "focus": ["spine", "chest", "heart-opening", "cooldown"],
     "energy": "grounding",
     "estimatedBreaths": 18,
     "poses": [
       {
         "poseId": "pose_cobra",
-        "duration": {
-          "type": "breaths",
-          "value": 4
-        }
+        "duration": { "type": "breaths", "value": 4 }
       },
       {
         "poseId": "pose_bridge_pose",
-        "duration": {
-          "type": "breaths",
-          "value": 6
-        }
+        "duration": { "type": "breaths", "value": 6 }
       },
       {
         "poseId": "pose_locust",
-        "duration": {
-          "type": "breaths",
-          "value": 4
-        }
+        "duration": { "type": "breaths", "value": 4 }
       }
     ]
   },
@@ -326,11 +333,23 @@
     "poses": [
       {
         "poseId": "pose_warrior_1",
-        "duration": { "type": "breaths", "value": 5 }
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "right"
       },
       {
         "poseId": "pose_warrior_2",
-        "duration": { "type": "breaths", "value": 5 }
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "right"
+      },
+      {
+        "poseId": "pose_warrior_1",
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "left"
+      },
+      {
+        "poseId": "pose_warrior_2",
+        "duration": { "type": "breaths", "value": 5 },
+        "side": "left"
       }
     ]
   }

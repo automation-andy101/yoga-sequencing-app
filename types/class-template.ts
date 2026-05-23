@@ -3,7 +3,7 @@ import type { Difficulty, YogaStyle } from "./common";
 export type ClassTemplateSectionType =
   | "arrival"
   | "warmup"
-  | "vinyasa"
+  | "sun-salutations"
   | "standing-flow"
   | "peak-prep"
   | "cooldown"
