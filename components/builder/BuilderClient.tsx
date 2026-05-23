@@ -23,6 +23,7 @@ export default function BuilderClient({
 
     const [isSaving, setIsSaving] = useState(false);
     const [saveMessage, setSaveMessage] = useState("");
+    const [className, setClassName] = useState("");
 
     const selectedTemplate = useMemo(
         () =>
@@ -37,6 +38,7 @@ export default function BuilderClient({
 
     useEffect(() => {
         setEditableTemplate(selectedTemplate ?? null);
+        setClassName(selectedTemplate ? `${selectedTemplate.name} - Custom` : "");
         setSaveMessage("");
     }, [selectedTemplate]);
 
@@ -129,18 +131,18 @@ export default function BuilderClient({
             setSaveMessage("");
 
             const response = await fetch("/api/saved-classes", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                name: `${editableTemplate.name} - Custom`,
-                sourceTemplateId: editableTemplate._id,
-                style: editableTemplate.style,
-                difficulty: editableTemplate.difficulty,
-                durationMinutes: editableTemplate.durationMinutes,
-                sections: editableTemplate.sections,
-            }),
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: className,
+                    sourceTemplateId: editableTemplate._id,
+                    style: editableTemplate.style,
+                    difficulty: editableTemplate.difficulty,
+                    durationMinutes: editableTemplate.durationMinutes,
+                    sections: editableTemplate.sections,
+                }),
             });
 
             if (!response.ok) {
@@ -159,6 +161,19 @@ export default function BuilderClient({
     return (
         <main className="min-h-screen px-6 py-10">
             <div className="mx-auto max-w-6xl">
+                <div className="mt-6">
+                    <label className="mb-2 block text-sm font-medium">
+                        Class title
+                    </label>
+
+                    <input
+                        value={className}
+                        onChange={(event) => setClassName(event.target.value)}
+                        className="w-full rounded-xl border px-3 py-2 text-sm"
+                        placeholder="Enter class title"
+                    />
+                </div>
+                
                 <div className="mb-8">
                     <h1 className="text-3xl font-bold">Class Builder</h1>
                     <p className="mt-2 text-muted-foreground">
@@ -189,7 +204,7 @@ export default function BuilderClient({
                 ) : (
                     <section className="space-y-6">
                         <div className="rounded-3xl border bg-gradient-to-br from-white to-gray-50 p-8 shadow-sm">
-                            <h2 className="text-4xl font-black tracking-tight">{editableTemplate.name}</h2>
+                            <h2 className="text-4xl font-black tracking-tight">{className || editableTemplate.name}</h2>
 
                             <div className="mt-5 flex flex-wrap gap-3 text-sm">
                                 <span className="rounded-full bg-black px-3 py-1 text-white">
