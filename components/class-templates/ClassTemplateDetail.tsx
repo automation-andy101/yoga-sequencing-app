@@ -2,17 +2,20 @@ import { ClassTemplate } from "@/types/class-template";
 import { Module } from "@/types/module";
 import { Pose } from "@/types/pose";
 import { formatSectionType } from "@/lib/utils/format";
+import { ReactNode } from "react";
 
 type Props = {
     classTemplate: ClassTemplate;
     modules: Module[];
     poses: Pose[];
+    action?: ReactNode
 };
 
 export default function ClassTemplateDetails({
     classTemplate,
     modules,
-    poses
+    poses,
+    action
 }: Props) {
     const getModule = (moduleId: string) => modules.find((module) => module._id === moduleId);
 
@@ -25,6 +28,7 @@ export default function ClassTemplateDetails({
     return (
         <main className="min-hscreen px-6 py-10">
             <div className="mx-auto max-w-5xl">
+
                 <div className="mb-8">
                     <h1 className="text-3xl font-bold">{classTemplate.name}</h1>
 
@@ -41,6 +45,8 @@ export default function ClassTemplateDetails({
                             {classTemplate.durationMinutes} mins
                         </span>
                     </div>
+
+                    {action && <div className="mt-6">{action}</div>}
                 </div>
 
                 <div className="space-y-8">

@@ -10,12 +10,16 @@ type Props = {
   classTemplates: ClassTemplate[];
   modules: Module[];
   poses: Pose[];
+  mode?: "create" | "edit";
+  savedClassId?: string;
 };
 
 export default function BuilderClient({
   classTemplates,
   modules,
   poses,
+  mode = "create",
+  savedClassId
 }: Props) {
   const [selectedTemplateId, setSelectedTemplateId] = useState(
     classTemplates[0]?._id ?? ""
@@ -26,8 +30,7 @@ export default function BuilderClient({
     const [className, setClassName] = useState("");
 
     const selectedTemplate = useMemo(
-        () =>
-        classTemplates.find(
+        () => classTemplates.find(
             (classTemplate) => classTemplate._id === selectedTemplateId
         ),
         [classTemplates, selectedTemplateId]
@@ -130,29 +133,43 @@ export default function BuilderClient({
             setIsSaving(true);
             setSaveMessage("");
 
-            const response = await fetch("/api/saved-classes", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    name: className,
-                    sourceTemplateId: editableTemplate._id,
-                    style: editableTemplate.style,
-                    difficulty: editableTemplate.difficulty,
-                    durationMinutes: editableTemplate.durationMinutes,
-                    sections: editableTemplate.sections,
-                }),
-            });
+            const isEditMode = mode === "edit" && savedClassId;
+
+            const response = await fetch(
+                isEditMode 
+                    ? `/api/saved-classes/${savedClassId}`
+                    : "/api/saved-classes", 
+                {
+                    method: isEditMode ? "PUT" : "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        name: className,
+                        sourceTemplateId: editableTemplate._id,
+                        style: editableTemplate.style,
+                        difficulty: editableTemplate.difficulty,
+                        durationMinutes: editableTemplate.durationMinutes,
+                        sections: editableTemplate.sections,
+                    }),
+                });
 
             if (!response.ok) {
-            throw new Error("Failed to save class");
+                throw new Error("Failed to save class");
             }
 
-            setSaveMessage("Class saved successfully.");
+            setSaveMessage(
+                isEditMode
+                    ? "Failed to update class."
+                    : "Failed to save class"
+            );
         } catch (error) {
             console.error(error);
-            setSaveMessage("Failed to save class.");
+            setSaveMessage(
+                    mode === "edit"
+                        ? "Failed to update class."
+                        : "Failed to save class"
+                );
         } finally {
             setIsSaving(false);
         }
@@ -225,9 +242,16 @@ export default function BuilderClient({
                                     type="button"
                                     onClick={saveClass}
                                     disabled={isSaving}
-                                    className="rounded-xl bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50"
+                                    className="rounded-xl bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
                                 >
-                                    {isSaving ? "Saving..." : "Save Class"}
+                                    {isSaving 
+                                        ? mode === "edit"
+                                            ? "Updating..."
+                                            : "Saving"
+                                        : mode === "edit"
+                                            ? "Update Class"
+                                            : "Save Class"
+                                    }
                                 </button>
 
                                 {saveMessage && (

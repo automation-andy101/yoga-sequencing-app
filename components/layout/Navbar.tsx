@@ -17,6 +17,10 @@ const navItems = [
     label: "Builder",
     href: "/builder",
   },
+  {
+    label: "Saved Classes",
+    href: "/saved-classes",
+  }
 ];
 
 export default function Navbar() {
